@@ -6,21 +6,38 @@
 
 
 Step	Action	Purpose
+
 1	Launch EC2 Instance (Amazon Linux 2)	Create a cloud server for Jenkins setup
+
 2	Connect to EC2 via PuTTY	Access and control your EC2 instance
+
 3	Install Java (Amazon Corretto 8)	Required for compiling and running Java code
+
 4	Install Apache Maven	Build tool to compile and package Java apps
+
 5	Install Jenkins	The CI/CD automation server
+
 6	Start Jenkins Service	Enable Jenkins and ensure it's running
+
 7	Access Jenkins via Browser	Visit Jenkins web UI on http://52.38.179.74:8080
+
 8	Unlock Jenkins and Install Plugins	Initial setup of Jenkins after installation
+
 9	Create HelloWorld Java App + pom.xml	Basic Java Maven project for testing
+
 10	Push Project to GitHub	So Jenkins can pull the project and build it
+
 11	Create Jenkins Freestyle Project	Configure job to build Java app using Maven
+
 12	Build the Jenkins Job	Trigger a build and verify BUILD SUCCESS
+
 13	Capture Screenshot & Push to GitHub	Evidence of success; submit your repo link
 
+
+
  src/main/java/HelloWorld.java
+
+ 
 
 public class HelloWorld {
     public static void main(String[] args) {
@@ -29,7 +46,11 @@ public class HelloWorld {
 }
 
 
-[ pom.xml ]
+
+ 
+ pom.xml 
+
+ 
 
 <project>
   <modelVersion>4.0.0</modelVersion>
@@ -53,7 +74,11 @@ public class HelloWorld {
 
 
 
-[Final GitHub Repository Structure]
+
+
+Final GitHub Repository Structure
+
+
 
 hello-java-maven/
 ├── pom.xml
